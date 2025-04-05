@@ -70,7 +70,7 @@
             // 
             // Cerrarr
             // 
-            this.Cerrarr.Location = new System.Drawing.Point(162, 267);
+            this.Cerrarr.Location = new System.Drawing.Point(191, 264);
             this.Cerrarr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Cerrarr.Name = "Cerrarr";
             this.Cerrarr.Size = new System.Drawing.Size(255, 52);
