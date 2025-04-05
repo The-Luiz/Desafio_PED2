@@ -19,7 +19,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Hola Moises necesitas descargar git y tenes que ignorar la carpeta VS
+            //Hola 
         }
     }
 }
