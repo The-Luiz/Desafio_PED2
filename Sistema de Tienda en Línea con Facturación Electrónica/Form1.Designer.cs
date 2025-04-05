@@ -75,7 +75,7 @@
             this.Cerrarr.Name = "Cerrarr";
             this.Cerrarr.Size = new System.Drawing.Size(255, 52);
             this.Cerrarr.TabIndex = 1;
-            this.Cerrarr.Text = "button1";
+            this.Cerrarr.Text = "men";
             this.Cerrarr.UseVisualStyleBackColor = true;
             // 
             // Form1
