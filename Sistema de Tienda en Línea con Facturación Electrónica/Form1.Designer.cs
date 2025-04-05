@@ -31,7 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Cerrar = new System.Windows.Forms.Button();
+            this.Cerrarr = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,22 +68,22 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // Cerrar
+            // Cerrarr
             // 
-            this.Cerrar.Location = new System.Drawing.Point(202, 275);
-            this.Cerrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(255, 52);
-            this.Cerrar.TabIndex = 1;
-            this.Cerrar.Text = "button1";
-            this.Cerrar.UseVisualStyleBackColor = true;
+            this.Cerrarr.Location = new System.Drawing.Point(202, 275);
+            this.Cerrarr.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Cerrarr.Name = "Cerrarr";
+            this.Cerrarr.Size = new System.Drawing.Size(255, 52);
+            this.Cerrarr.TabIndex = 1;
+            this.Cerrarr.Text = "button1";
+            this.Cerrarr.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 360);
-            this.Controls.Add(this.Cerrar);
+            this.Controls.Add(this.Cerrarr);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -99,7 +99,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button Cerrar;
+        private System.Windows.Forms.Button Cerrarr;
     }
 }
 
