@@ -40,12 +40,22 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            // ignora esto
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
+            // Ignorar esto
+        }
 
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            //Esto es para que se esconda las palabras del textbox
+            if (textBox1.Text == "Busca productos ;)")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.Black;
+            }
         }
     }
 }
