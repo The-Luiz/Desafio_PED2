@@ -99,5 +99,25 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 row.Cells[3].Value = p.Stock;
             }
         }
+
+        private void DGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            if (e.Button == MouseButtons.Right)
+            {
+                //DGV.ClearSelection();
+                DGV.Rows[e.RowIndex].Selected = true;
+                ContextMenu m = new ContextMenu();
+
+                MenuItem borrarItem = new MenuItem("Borrar");
+                MenuItem agregarcarrito = new MenuItem("Agregar al Carrito");
+
+                m.MenuItems.Add(borrarItem);
+                m.MenuItems.Add(agregarcarrito);
+
+                m.Show(DGV, new Point(e.X, e.Y));
+            }
+        }
     }
 }

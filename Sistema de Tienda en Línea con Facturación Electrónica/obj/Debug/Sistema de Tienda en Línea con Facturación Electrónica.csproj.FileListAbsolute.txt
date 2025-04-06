@@ -8,3 +8,4 @@ C:\Mesa\Desafio_PED2\Sistema de Tienda en Línea con Facturación Electrónica\o
 C:\Mesa\Desafio_PED2\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.csproj.CoreCompileInputs.cache
 C:\Mesa\Desafio_PED2\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe
 C:\Mesa\Desafio_PED2\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.pdb
+C:\Mesa\Desafio_PED2\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.Carrito.resources
