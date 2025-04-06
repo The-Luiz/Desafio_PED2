@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrito.Designer.cs">
+      <DependentUpon>Carrito.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClaseProducto.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
