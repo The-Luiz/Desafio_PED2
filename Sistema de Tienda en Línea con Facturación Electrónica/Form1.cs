@@ -87,6 +87,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             List<ClaseProducto> list = new List<ClaseProducto>();
             list.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodomestico"));
             list.Add(new ClaseProducto("Silla", 100,10, 2, "Mueble"));
+            list.Add(new ClaseProducto("Cepillos", 3, 0, 9, "Cosas"));
+            list.Add(new ClaseProducto("Lirbos", 5, 7, 3, "Cosas"));
             foreach (ClaseProducto p in list)
             {
                 int rowIndex = DGV.Rows.Add();
