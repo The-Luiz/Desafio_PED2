@@ -14,12 +14,12 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         public int Codigo { get; set; }
         public string Categoria { get; set; }
 
-        public ClaseProducto(string NuevoNombre, int NuevoPrecio, int NuevoStock,int NuevoCodigo, string NuevaCategoria) 
+        public ClaseProducto(string NuevoNombre, int NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria) 
         {
-           Nombre = NuevoNombre;
+            Codigo = NuevoCodigo;
+            Nombre = NuevoNombre;
            Precio = NuevoPrecio;
            Stock = NuevoStock;
-           Codigo = NuevoCodigo;
            Categoria = NuevaCategoria;
         }
     }

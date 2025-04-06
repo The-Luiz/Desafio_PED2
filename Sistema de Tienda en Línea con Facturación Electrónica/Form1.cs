@@ -13,6 +13,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 {
     public partial class Form1 : Form
     {
+        BindingList<ClaseProducto> productos = new BindingList<ClaseProducto>();
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +26,6 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DGV.MultiSelect = false;
-            
             AjustarDGV();
             
         }
@@ -62,7 +62,6 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 textBox1.ForeColor = Color.Black;
             }
         }
-        //Hay que ver donde ponerlo xd
         private void AjustarDGV()
         {
             int height = DGV.ColumnHeadersHeight;
@@ -76,28 +75,25 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void ColumnasDGV()
         {
-            DGV.Columns.Add("Codigo", "ID");
-            DGV.Columns.Add("Nombre", "Producto");
-            DGV.Columns.Add("Categoria", "Categoria");
-            DGV.Columns.Add("Stock", "Stock");
+            DGV.Columns["Codigo"].DisplayIndex = 0;
+            DGV.Columns["Nombre"].DisplayIndex = 1;
+            DGV.Columns["Precio"].DisplayIndex = 2;
+            DGV.Columns["Stock"].DisplayIndex = 3;
+            DGV.Columns["Categoria"].DisplayIndex = 4;
+
         }
-        private void Pruebas()
+        public void Pruebas()
         {
+            
+            productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico"));
+            productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble"));
+            productos.Add(new ClaseProducto("Cepillos", 3, 0, 9, "Cosas"));
+            productos.Add(new ClaseProducto("Libros", 5, 7, 3, "Cosas"));
+
+            //DGV.AutoGenerateColumns = true;
+            DGV.DataSource = productos;
             ColumnasDGV();
-            List<ClaseProducto> list = new List<ClaseProducto>();
-            list.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodomestico"));
-            list.Add(new ClaseProducto("Silla", 100,10, 2, "Mueble"));
-            list.Add(new ClaseProducto("Cepillos", 3, 0, 9, "Cosas"));
-            list.Add(new ClaseProducto("Libros", 5, 7, 3, "Cosas"));
-            foreach (ClaseProducto p in list)
-            {
-                int rowIndex = DGV.Rows.Add();
-                DataGridViewRow row = DGV.Rows[rowIndex];
-                row.Cells[0].Value = p.Codigo;
-                row.Cells[1].Value = p.Nombre;
-                row.Cells[2].Value = p.Categoria;
-                row.Cells[3].Value = p.Stock;
-            }
+
         }
 
         private void DGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -106,11 +102,11 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 return;
             if (e.Button == MouseButtons.Right)
             {
-                //DGV.ClearSelection();
+                DGV.ClearSelection();
                 DGV.Rows[e.RowIndex].Selected = true;
                 ContextMenu m = new ContextMenu();
 
-                MenuItem borrarItem = new MenuItem("Borrar");
+                MenuItem borrarItem = new MenuItem("Borrar",BorrarFila);
                 MenuItem agregarcarrito = new MenuItem("Agregar al Carrito");
 
                 m.MenuItems.Add(borrarItem);
@@ -119,5 +115,14 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 m.Show(DGV, new Point(e.X, e.Y));
             }
         }
+        private void BorrarFila(object sender, EventArgs e)
+        {
+            if (DGV.CurrentRow?.DataBoundItem is ClaseProducto ProductoSeleccionado)
+            {
+                productos.Remove(ProductoSeleccionado);
+                MessageBox.Show("Producto borrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
     }
 }
