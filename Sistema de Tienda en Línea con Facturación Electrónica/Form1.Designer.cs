@@ -41,8 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarProductos = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -55,7 +53,7 @@
             this.DGV.AllowUserToResizeColumns = false;
             this.DGV.AllowUserToResizeRows = false;
             this.DGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGV.Location = new System.Drawing.Point(551, 178);
+            this.DGV.Location = new System.Drawing.Point(490, 142);
             this.DGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DGV.MultiSelect = false;
             this.DGV.Name = "DGV";
@@ -63,7 +61,7 @@
             this.DGV.RowHeadersVisible = false;
             this.DGV.RowHeadersWidth = 62;
             this.DGV.RowTemplate.Height = 28;
-            this.DGV.Size = new System.Drawing.Size(518, 236);
+            this.DGV.Size = new System.Drawing.Size(460, 189);
             this.DGV.TabIndex = 0;
             this.DGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DGV_CellMouseClick);
             // 
@@ -73,9 +71,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(38, 31);
+            this.label1.Location = new System.Drawing.Point(34, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 49);
+            this.label1.Size = new System.Drawing.Size(234, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Tienda UDB ;)";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -85,10 +83,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(994, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(884, 7);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -102,7 +100,7 @@
             this.panel1.Location = new System.Drawing.Point(-2, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1149, 135);
+            this.panel1.Size = new System.Drawing.Size(1021, 108);
             this.panel1.TabIndex = 3;
             // 
             // panel2
@@ -114,10 +112,10 @@
             this.panel2.Controls.Add(this.RD_Nombre);
             this.panel2.Controls.Add(this.label2);
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.Location = new System.Drawing.Point(-2, 205);
+            this.panel2.Location = new System.Drawing.Point(-2, 164);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 278);
+            this.panel2.Size = new System.Drawing.Size(284, 222);
             this.panel2.TabIndex = 4;
             // 
             // textBox1
@@ -125,11 +123,11 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.textBox1.Location = new System.Drawing.Point(32, 198);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(28, 158);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 40);
+            this.textBox1.Size = new System.Drawing.Size(203, 32);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "Busca productos ;)";
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
@@ -139,10 +137,10 @@
             this.RD_ID.AutoSize = true;
             this.RD_ID.BackColor = System.Drawing.Color.Transparent;
             this.RD_ID.ForeColor = System.Drawing.SystemColors.Control;
-            this.RD_ID.Location = new System.Drawing.Point(46, 150);
-            this.RD_ID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RD_ID.Location = new System.Drawing.Point(41, 120);
+            this.RD_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RD_ID.Name = "RD_ID";
-            this.RD_ID.Size = new System.Drawing.Size(119, 24);
+            this.RD_ID.Size = new System.Drawing.Size(98, 20);
             this.RD_ID.TabIndex = 3;
             this.RD_ID.Text = "ID Producto";
             this.RD_ID.UseVisualStyleBackColor = false;
@@ -152,10 +150,10 @@
             this.RD_Categoria.AutoSize = true;
             this.RD_Categoria.BackColor = System.Drawing.Color.Transparent;
             this.RD_Categoria.ForeColor = System.Drawing.SystemColors.Control;
-            this.RD_Categoria.Location = new System.Drawing.Point(46, 116);
-            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RD_Categoria.Location = new System.Drawing.Point(41, 93);
+            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RD_Categoria.Name = "RD_Categoria";
-            this.RD_Categoria.Size = new System.Drawing.Size(103, 24);
+            this.RD_Categoria.Size = new System.Drawing.Size(87, 20);
             this.RD_Categoria.TabIndex = 2;
             this.RD_Categoria.Text = "Categoria";
             this.RD_Categoria.UseVisualStyleBackColor = false;
@@ -166,10 +164,10 @@
             this.RD_Nombre.BackColor = System.Drawing.Color.Transparent;
             this.RD_Nombre.Checked = true;
             this.RD_Nombre.ForeColor = System.Drawing.SystemColors.Control;
-            this.RD_Nombre.Location = new System.Drawing.Point(46, 82);
-            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RD_Nombre.Location = new System.Drawing.Point(41, 66);
+            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RD_Nombre.Name = "RD_Nombre";
-            this.RD_Nombre.Size = new System.Drawing.Size(182, 24);
+            this.RD_Nombre.Size = new System.Drawing.Size(155, 20);
             this.RD_Nombre.TabIndex = 1;
             this.RD_Nombre.TabStop = true;
             this.RD_Nombre.Text = "Nombre del producto";
@@ -181,18 +179,18 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(14, 26);
+            this.label2.Location = new System.Drawing.Point(12, 21);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 31);
+            this.label2.Size = new System.Drawing.Size(223, 26);
             this.label2.TabIndex = 0;
             this.label2.Text = "Buscar productos por";
             // 
             // btnAgregarProductos
             // 
-            this.btnAgregarProductos.Location = new System.Drawing.Point(551, 448);
+            this.btnAgregarProductos.Location = new System.Drawing.Point(490, 358);
             this.btnAgregarProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
-            this.btnAgregarProductos.Size = new System.Drawing.Size(213, 75);
+            this.btnAgregarProductos.Size = new System.Drawing.Size(189, 60);
             this.btnAgregarProductos.TabIndex = 5;
             this.btnAgregarProductos.Text = "Agregar Productos";
             this.btnAgregarProductos.UseVisualStyleBackColor = true;
@@ -200,41 +198,19 @@
             // 
             // btnStock
             // 
-            this.btnStock.Location = new System.Drawing.Point(827, 448);
+            this.btnStock.Location = new System.Drawing.Point(702, 405);
             this.btnStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStock.Name = "btnStock";
-            this.btnStock.Size = new System.Drawing.Size(213, 75);
+            this.btnStock.Size = new System.Drawing.Size(189, 60);
             this.btnStock.TabIndex = 6;
             this.btnStock.Text = "Stock Critico";
             this.btnStock.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(796, 680);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(240, 94);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Stock Critico";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(843, 555);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 75);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Stock Critico";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1292, 828);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1020, 530);
             this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnAgregarProductos);
             this.Controls.Add(this.panel2);
@@ -268,8 +244,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAgregarProductos;
         private System.Windows.Forms.Button btnStock;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 
