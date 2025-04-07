@@ -39,6 +39,7 @@
             this.RD_Categoria = new System.Windows.Forms.RadioButton();
             this.RD_Nombre = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnAgregarProductos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -179,11 +180,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Buscar productos por";
             // 
+            // btnAgregarProductos
+            // 
+            this.btnAgregarProductos.Location = new System.Drawing.Point(681, 459);
+            this.btnAgregarProductos.Name = "btnAgregarProductos";
+            this.btnAgregarProductos.Size = new System.Drawing.Size(213, 75);
+            this.btnAgregarProductos.TabIndex = 5;
+            this.btnAgregarProductos.Text = "Agregar Productos";
+            this.btnAgregarProductos.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 662);
+            this.Controls.Add(this.btnAgregarProductos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DGV);
@@ -213,6 +224,7 @@
         private System.Windows.Forms.RadioButton RD_Categoria;
         private System.Windows.Forms.RadioButton RD_Nombre;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAgregarProductos;
     }
 }
 
