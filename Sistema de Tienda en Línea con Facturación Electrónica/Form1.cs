@@ -96,6 +96,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
             //DGV.AutoGenerateColumns = true;
             DGV.DataSource = productos;
+            DGV.Columns["CantidadEnCarrito"].Visible = false;
             ColumnasDGV();
 
         }
@@ -134,6 +135,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 carrito.AgregarProducto(ProductoSeleccionado);
                 MessageBox.Show("Producto agregado al carrito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+
             
         }
 

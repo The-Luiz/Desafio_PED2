@@ -30,8 +30,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             MostrarProductosEnListView();
             RefrescarListView();
             listView1.Columns.Add("Producto", 120);
-            listView1.Columns.Add("Precio", 80);
-            listView1.Columns.Add("Cantidad", 70);
+            listView1.Columns.Add("Cantidad", 80);
+            listView1.Columns.Add("Precio", 70);
             listView1.Columns.Add("Categoría", 120);
         }
         private void MostrarProductosEnListView()
@@ -49,13 +49,18 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         private void RefrescarListView()
         {
             listView1.Items.Clear();
-
+            //SubTotalLabel
+            SubTotalPrecio.Text = $" {SubTotal():C}";
+            //Impuestos
+            Impuestos.Text = $" {ImpuestosTotal():C}";
+            //Total final
+            Total.Text = $" {TotalFinal():C}";
             foreach (var producto in carrito.Productos)
             {
-                ListViewItem item = new ListViewItem(producto.Nombre);
-                item.SubItems.Add(producto.Precio.ToString());
-                item.SubItems.Add(producto.Stock.ToString());
-                item.SubItems.Add(producto.Categoria.ToString());
+                var item = new ListViewItem(producto.Nombre);
+                item.SubItems.Add(producto.CantidadEnCarrito.ToString()); // ← Mostramos cantidad
+                item.SubItems.Add(producto.Precio.ToString("C"));
+                item.SubItems.Add(producto.Categoria);
                 listView1.Items.Add(item);
             }
         }
@@ -86,6 +91,34 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 MessageBox.Show("Seleccioná un producto del carrito para eliminarlo.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+        private double SubTotal()
+        {
+            double total = 0;
+            foreach (var producto in carrito.Productos)
+            {
+                total += producto.Precio * producto.CantidadEnCarrito;
+            }
+            return total;
+        }
+        private double ImpuestosTotal()
+        {
+            double impuestosTotal = 0;
+            foreach (var producto in carrito.Productos)
+            {
+                impuestosTotal += (producto.Precio * producto.CantidadEnCarrito) * 0.13;
+            }
+            return impuestosTotal;
+        }
+        private double TotalFinal()
+        {
+            double totalFinal = 0;
+            foreach (var producto in carrito.Productos)
+            {
+                totalFinal = SubTotal()+ ImpuestosTotal();
+            }
+            return totalFinal;
+        }
+
 
     }
 }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("ID");
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Producto");
-            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Cantidad");
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Precio");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("ID");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Producto");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Cantidad");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Precio");
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGenerar = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.SubTotal = new System.Windows.Forms.Label();
+            this.SubTotalPrecio = new System.Windows.Forms.Label();
             this.Impuestos = new System.Windows.Forms.Label();
             this.Total = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -51,10 +51,10 @@
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1,
-            listViewItem2,
-            listViewItem3,
-            listViewItem4});
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8});
             this.listView1.Location = new System.Drawing.Point(39, 96);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(609, 424);
@@ -104,7 +104,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(770, 44);
+            this.label2.Location = new System.Drawing.Point(711, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 5;
@@ -113,7 +113,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(770, 123);
+            this.label3.Location = new System.Drawing.Point(711, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 6;
@@ -122,25 +122,25 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(770, 78);
+            this.label4.Location = new System.Drawing.Point(711, 86);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Impuestos:";
             // 
-            // SubTotal
+            // SubTotalPrecio
             // 
-            this.SubTotal.AutoSize = true;
-            this.SubTotal.Location = new System.Drawing.Point(866, 44);
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.Size = new System.Drawing.Size(18, 20);
-            this.SubTotal.TabIndex = 8;
-            this.SubTotal.Text = "0";
+            this.SubTotalPrecio.AutoSize = true;
+            this.SubTotalPrecio.Location = new System.Drawing.Point(807, 52);
+            this.SubTotalPrecio.Name = "SubTotalPrecio";
+            this.SubTotalPrecio.Size = new System.Drawing.Size(18, 20);
+            this.SubTotalPrecio.TabIndex = 8;
+            this.SubTotalPrecio.Text = "0";
             // 
             // Impuestos
             // 
             this.Impuestos.AutoSize = true;
-            this.Impuestos.Location = new System.Drawing.Point(866, 78);
+            this.Impuestos.Location = new System.Drawing.Point(807, 86);
             this.Impuestos.Name = "Impuestos";
             this.Impuestos.Size = new System.Drawing.Size(18, 20);
             this.Impuestos.TabIndex = 9;
@@ -149,7 +149,7 @@
             // Total
             // 
             this.Total.AutoSize = true;
-            this.Total.Location = new System.Drawing.Point(850, 123);
+            this.Total.Location = new System.Drawing.Point(791, 131);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(18, 20);
             this.Total.TabIndex = 10;
@@ -162,7 +162,7 @@
             this.ClientSize = new System.Drawing.Size(943, 555);
             this.Controls.Add(this.Total);
             this.Controls.Add(this.Impuestos);
-            this.Controls.Add(this.SubTotal);
+            this.Controls.Add(this.SubTotalPrecio);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,7 +189,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label SubTotal;
+        private System.Windows.Forms.Label SubTotalPrecio;
         private System.Windows.Forms.Label Impuestos;
         private System.Windows.Forms.Label Total;
     }

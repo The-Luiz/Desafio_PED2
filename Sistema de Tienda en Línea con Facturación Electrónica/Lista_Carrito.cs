@@ -19,7 +19,17 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         // Método opcional para agregar productos
         public void AgregarProducto(ClaseProducto producto)
         {
-            Productos.Add(producto);
+            var existente = Productos.FirstOrDefault(p => p.Codigo == producto.Codigo);
+            if (existente != null)
+            {
+                existente.CantidadEnCarrito++; // suma si ya está
+            }
+            else
+            {
+                producto.CantidadEnCarrito = 1;
+                Productos.Add(producto); // agrega nuevo
+            }
+
         }
         public void EliminarProducto(ClaseProducto producto)
         {
