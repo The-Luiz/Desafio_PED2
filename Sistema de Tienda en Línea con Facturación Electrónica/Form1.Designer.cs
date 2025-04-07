@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarProductos = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -206,11 +207,22 @@
             this.btnStock.Text = "Stock Critico";
             this.btnStock.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(708, 544);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 75);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Stock Critico";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1148, 662);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnAgregarProductos);
             this.Controls.Add(this.panel2);
@@ -244,6 +256,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAgregarProductos;
         private System.Windows.Forms.Button btnStock;
+        private System.Windows.Forms.Button button1;
     }
 }
 
