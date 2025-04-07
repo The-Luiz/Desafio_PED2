@@ -186,7 +186,7 @@
             // 
             // btnAgregarProductos
             // 
-            this.btnAgregarProductos.Location = new System.Drawing.Point(602, 366);
+            this.btnAgregarProductos.Location = new System.Drawing.Point(606, 366);
             this.btnAgregarProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
             this.btnAgregarProductos.Size = new System.Drawing.Size(189, 60);
