@@ -31,7 +31,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             RefrescarListView();
             listView1.Columns.Add("Producto", 120);
             listView1.Columns.Add("Precio", 80);
-            listView1.Columns.Add("Stock", 70);
+            listView1.Columns.Add("Cantidad", 70);
             listView1.Columns.Add("Categoría", 120);
         }
         private void MostrarProductosEnListView()
