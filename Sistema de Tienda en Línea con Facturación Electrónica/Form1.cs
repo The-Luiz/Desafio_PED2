@@ -8,12 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 {
     public partial class Form1 : Form
     {
         BindingList<ClaseProducto> productos = new BindingList<ClaseProducto>();
+        private Lista_Carrito carrito = new Lista_Carrito();
+
         public Form1()
         {
             InitializeComponent();
@@ -44,8 +48,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Carrito NuevoCarrito = new Carrito();
-            NuevoCarrito.ShowDialog();
+            Carrito ventanaCarrito = new Carrito(carrito);
+            ventanaCarrito.ShowDialog(); // o Show()
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -87,8 +91,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             
             productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico"));
             productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble"));
-            productos.Add(new ClaseProducto("Cepillos", 3, 0, 9, "Cosas"));
-            productos.Add(new ClaseProducto("Libros", 5, 7, 3, "Cosas"));
+            productos.Add(new ClaseProducto("Cepillos", 3, 0, 3, "Cosas"));
+            productos.Add(new ClaseProducto("Libros", 5, 7, 4, "Cosas"));
 
             //DGV.AutoGenerateColumns = true;
             DGV.DataSource = productos;
@@ -107,7 +111,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 ContextMenu m = new ContextMenu();
 
                 MenuItem borrarItem = new MenuItem("Borrar",BorrarFila);
-                MenuItem agregarcarrito = new MenuItem("Agregar al Carrito");
+                MenuItem agregarcarrito = new MenuItem("Agregar al Carrito",AgregarCarrito);
 
                 m.MenuItems.Add(borrarItem);
                 m.MenuItems.Add(agregarcarrito);
@@ -122,6 +126,15 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 productos.Remove(ProductoSeleccionado);
                 MessageBox.Show("Producto borrado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+        private void AgregarCarrito (object sender, EventArgs e)
+        {
+            if (DGV.CurrentRow?.DataBoundItem is ClaseProducto ProductoSeleccionado)
+            {
+                carrito.AgregarProducto(ProductoSeleccionado);
+                MessageBox.Show("Producto agregado al carrito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
 
     }

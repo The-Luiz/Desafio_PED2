@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 {
-    internal class ClaseProducto
+    public class ClaseProducto
     {
         public string Nombre { get; set; }
         public double Precio { get; set; }

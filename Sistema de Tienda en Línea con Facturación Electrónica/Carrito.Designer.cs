@@ -28,18 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("ID");
-            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("Producto");
-            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("Cantidad");
-            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("Precio");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("ID");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Producto");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Cantidad");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("Precio");
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGenerar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,23 +47,20 @@
             // 
             // listView1
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
             this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem5,
-            listViewItem6,
-            listViewItem7,
-            listViewItem8});
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4});
             this.listView1.Location = new System.Drawing.Point(39, 96);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(473, 424);
+            this.listView1.Size = new System.Drawing.Size(609, 424);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.SmallIcon;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // btnEliminar
             // 
@@ -77,10 +70,11 @@
             this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(518, 473);
+            this.btnGenerar.Location = new System.Drawing.Point(727, 420);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(157, 47);
             this.btnGenerar.TabIndex = 2;
@@ -110,7 +104,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(541, 46);
+            this.label2.Location = new System.Drawing.Point(770, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 20);
             this.label2.TabIndex = 5;
@@ -119,7 +113,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(541, 125);
+            this.label3.Location = new System.Drawing.Point(770, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 20);
             this.label3.TabIndex = 6;
@@ -128,7 +122,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(541, 80);
+            this.label4.Location = new System.Drawing.Point(770, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 20);
             this.label4.TabIndex = 7;
@@ -137,7 +131,7 @@
             // SubTotal
             // 
             this.SubTotal.AutoSize = true;
-            this.SubTotal.Location = new System.Drawing.Point(637, 46);
+            this.SubTotal.Location = new System.Drawing.Point(866, 44);
             this.SubTotal.Name = "SubTotal";
             this.SubTotal.Size = new System.Drawing.Size(18, 20);
             this.SubTotal.TabIndex = 8;
@@ -146,7 +140,7 @@
             // Impuestos
             // 
             this.Impuestos.AutoSize = true;
-            this.Impuestos.Location = new System.Drawing.Point(637, 80);
+            this.Impuestos.Location = new System.Drawing.Point(866, 78);
             this.Impuestos.Name = "Impuestos";
             this.Impuestos.Size = new System.Drawing.Size(18, 20);
             this.Impuestos.TabIndex = 9;
@@ -155,7 +149,7 @@
             // Total
             // 
             this.Total.AutoSize = true;
-            this.Total.Location = new System.Drawing.Point(621, 125);
+            this.Total.Location = new System.Drawing.Point(850, 123);
             this.Total.Name = "Total";
             this.Total.Size = new System.Drawing.Size(18, 20);
             this.Total.TabIndex = 10;
@@ -179,6 +173,7 @@
             this.Controls.Add(this.listView1);
             this.Name = "Carrito";
             this.Text = "Carrito";
+            this.Load += new System.EventHandler(this.Carrito_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,10 +185,6 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGenerar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
