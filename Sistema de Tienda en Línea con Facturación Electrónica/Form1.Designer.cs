@@ -40,6 +40,7 @@
             this.RD_Nombre = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarProductos = new System.Windows.Forms.Button();
+            this.btnStock = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -123,7 +124,7 @@
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.textBox1.Location = new System.Drawing.Point(28, 158);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(203, 32);
@@ -137,7 +138,7 @@
             this.RD_ID.BackColor = System.Drawing.Color.Transparent;
             this.RD_ID.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_ID.Location = new System.Drawing.Point(41, 120);
-            this.RD_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_ID.Margin = new System.Windows.Forms.Padding(4);
             this.RD_ID.Name = "RD_ID";
             this.RD_ID.Size = new System.Drawing.Size(98, 20);
             this.RD_ID.TabIndex = 3;
@@ -150,7 +151,7 @@
             this.RD_Categoria.BackColor = System.Drawing.Color.Transparent;
             this.RD_Categoria.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_Categoria.Location = new System.Drawing.Point(41, 93);
-            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4);
             this.RD_Categoria.Name = "RD_Categoria";
             this.RD_Categoria.Size = new System.Drawing.Size(87, 20);
             this.RD_Categoria.TabIndex = 2;
@@ -164,7 +165,7 @@
             this.RD_Nombre.Checked = true;
             this.RD_Nombre.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_Nombre.Location = new System.Drawing.Point(41, 66);
-            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4);
             this.RD_Nombre.Name = "RD_Nombre";
             this.RD_Nombre.Size = new System.Drawing.Size(155, 20);
             this.RD_Nombre.TabIndex = 1;
@@ -186,7 +187,7 @@
             // 
             // btnAgregarProductos
             // 
-            this.btnAgregarProductos.Location = new System.Drawing.Point(606, 366);
+            this.btnAgregarProductos.Location = new System.Drawing.Point(490, 358);
             this.btnAgregarProductos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
             this.btnAgregarProductos.Size = new System.Drawing.Size(189, 60);
@@ -195,11 +196,22 @@
             this.btnAgregarProductos.UseVisualStyleBackColor = true;
             this.btnAgregarProductos.Click += new System.EventHandler(this.btnAgregarProductos_Click);
             // 
+            // btnStock
+            // 
+            this.btnStock.Location = new System.Drawing.Point(740, 358);
+            this.btnStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(189, 60);
+            this.btnStock.TabIndex = 6;
+            this.btnStock.Text = "Stock Critico";
+            this.btnStock.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 530);
+            this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnAgregarProductos);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -231,6 +243,7 @@
         private System.Windows.Forms.RadioButton RD_Nombre;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnAgregarProductos;
+        private System.Windows.Forms.Button btnStock;
     }
 }
 
