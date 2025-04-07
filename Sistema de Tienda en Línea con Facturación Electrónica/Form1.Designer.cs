@@ -198,7 +198,7 @@
             // 
             // btnStock
             // 
-            this.btnStock.Location = new System.Drawing.Point(740, 358);
+            this.btnStock.Location = new System.Drawing.Point(651, 422);
             this.btnStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(189, 60);
