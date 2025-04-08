@@ -34,6 +34,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.CB_Filtro = new System.Windows.Forms.ComboBox();
             this.txtBusqueda = new System.Windows.Forms.TextBox();
             this.RD_ID = new System.Windows.Forms.RadioButton();
             this.RD_Categoria = new System.Windows.Forms.RadioButton();
@@ -41,8 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarProductos = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
-            this.CB_Filtro = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -97,6 +98,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, 2);
@@ -121,6 +123,28 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(320, 421);
             this.panel2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(41, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 31);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Ordenar por:";
+            // 
+            // CB_Filtro
+            // 
+            this.CB_Filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Filtro.FormattingEnabled = true;
+            this.CB_Filtro.Location = new System.Drawing.Point(47, 310);
+            this.CB_Filtro.Name = "CB_Filtro";
+            this.CB_Filtro.Size = new System.Drawing.Size(213, 28);
+            this.CB_Filtro.TabIndex = 8;
+            this.CB_Filtro.SelectedIndexChanged += new System.EventHandler(this.CB_Filtro_SelectedIndexChanged);
             // 
             // txtBusqueda
             // 
@@ -212,27 +236,19 @@
             this.btnStock.UseVisualStyleBackColor = true;
             this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
-            // CB_Filtro
+            // label4
             // 
-            this.CB_Filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CB_Filtro.FormattingEnabled = true;
-            this.CB_Filtro.Location = new System.Drawing.Point(47, 310);
-            this.CB_Filtro.Name = "CB_Filtro";
-            this.CB_Filtro.Size = new System.Drawing.Size(213, 28);
-            this.CB_Filtro.TabIndex = 8;
-            this.CB_Filtro.SelectedIndexChanged += new System.EventHandler(this.CB_Filtro_SelectedIndexChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(41, 261);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 31);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Ordenar por:";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(721, 56);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(169, 31);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Ver Ofertas ;)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Form1
             // 
@@ -274,6 +290,7 @@
         private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CB_Filtro;
+        private System.Windows.Forms.Label label4;
     }
 }
 

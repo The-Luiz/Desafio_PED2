@@ -168,6 +168,18 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void txtBusqueda_TextChanged(object sender, EventArgs e)
         {
+            string texto = txtBusqueda.Text.Trim().ToLower();
+            IEnumerable<ClaseProducto> resultados = null;
+            if (string.IsNullOrEmpty(texto))
+            {
+               // Si el textbox está vacío, mostrar la lista original
+                DGV.DataSource = null;
+                DGV.DataSource = productos;
+                DGV.Columns["CantidadEnCarrito"].Visible = false;
+                ColumnasDGV();
+                DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
+                return;
+            }
             if (RD_ID.Checked && int.TryParse(txtBusqueda.Text, out int codigo))
             {
                 foreach (DataGridViewRow row in DGV.Rows)
@@ -180,6 +192,22 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                         break;
                     }
                 }
+            }
+             if (RD_Nombre.Checked )
+            {
+                // Buscar por nombre
+                resultados = productos.Where(p => p.Nombre.ToLower().Contains(texto));
+                DGV.Columns["CantidadEnCarrito"].Visible = false;
+                ColumnasDGV();
+                DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
+            }
+            if (resultados != null)
+            {
+                DGV.DataSource = null;
+                DGV.DataSource = resultados.ToList();
+                DGV.Columns["CantidadEnCarrito"].Visible = false;
+                ColumnasDGV();
+                DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
             }
         }
 
@@ -220,5 +248,11 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            FormOfertas Oferta = new FormOfertas();
+            Oferta.ShowDialog();
+
+        }
     }
 }
