@@ -124,7 +124,7 @@
             this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.textBox1.Location = new System.Drawing.Point(28, 158);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(203, 32);
@@ -138,7 +138,7 @@
             this.RD_ID.BackColor = System.Drawing.Color.Transparent;
             this.RD_ID.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_ID.Location = new System.Drawing.Point(41, 120);
-            this.RD_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_ID.Margin = new System.Windows.Forms.Padding(4);
             this.RD_ID.Name = "RD_ID";
             this.RD_ID.Size = new System.Drawing.Size(98, 20);
             this.RD_ID.TabIndex = 3;
@@ -151,7 +151,7 @@
             this.RD_Categoria.BackColor = System.Drawing.Color.Transparent;
             this.RD_Categoria.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_Categoria.Location = new System.Drawing.Point(41, 93);
-            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_Categoria.Margin = new System.Windows.Forms.Padding(4);
             this.RD_Categoria.Name = "RD_Categoria";
             this.RD_Categoria.Size = new System.Drawing.Size(87, 20);
             this.RD_Categoria.TabIndex = 2;
@@ -165,7 +165,7 @@
             this.RD_Nombre.Checked = true;
             this.RD_Nombre.ForeColor = System.Drawing.SystemColors.Control;
             this.RD_Nombre.Location = new System.Drawing.Point(41, 66);
-            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RD_Nombre.Margin = new System.Windows.Forms.Padding(4);
             this.RD_Nombre.Name = "RD_Nombre";
             this.RD_Nombre.Size = new System.Drawing.Size(155, 20);
             this.RD_Nombre.TabIndex = 1;
@@ -198,7 +198,7 @@
             // 
             // btnStock
             // 
-            this.btnStock.Location = new System.Drawing.Point(281, 438);
+            this.btnStock.Location = new System.Drawing.Point(731, 358);
             this.btnStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStock.Name = "btnStock";
             this.btnStock.Size = new System.Drawing.Size(189, 60);
