@@ -41,6 +41,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarProductos = new System.Windows.Forms.Button();
             this.btnStock = new System.Windows.Forms.Button();
+            this.CB_Filtro = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -106,6 +108,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.CB_Filtro);
             this.panel2.Controls.Add(this.txtBusqueda);
             this.panel2.Controls.Add(this.RD_ID);
             this.panel2.Controls.Add(this.RD_Categoria);
@@ -115,7 +119,7 @@
             this.panel2.Location = new System.Drawing.Point(-2, 205);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(320, 334);
+            this.panel2.Size = new System.Drawing.Size(320, 421);
             this.panel2.TabIndex = 4;
             // 
             // txtBusqueda
@@ -208,6 +212,28 @@
             this.btnStock.UseVisualStyleBackColor = true;
             this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
+            // CB_Filtro
+            // 
+            this.CB_Filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CB_Filtro.FormattingEnabled = true;
+            this.CB_Filtro.Location = new System.Drawing.Point(47, 310);
+            this.CB_Filtro.Name = "CB_Filtro";
+            this.CB_Filtro.Size = new System.Drawing.Size(213, 28);
+            this.CB_Filtro.TabIndex = 8;
+            this.CB_Filtro.SelectedIndexChanged += new System.EventHandler(this.CB_Filtro_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Berlin Sans FB", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
+            this.label3.Location = new System.Drawing.Point(41, 261);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(165, 31);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Ordenar por:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -246,6 +272,8 @@
         private System.Windows.Forms.TextBox txtBusqueda;
         private System.Windows.Forms.Button btnAgregarProductos;
         private System.Windows.Forms.Button btnStock;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox CB_Filtro;
     }
 }
 

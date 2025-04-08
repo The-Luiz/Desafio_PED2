@@ -33,7 +33,12 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         {
             this.DGV.MultiSelect = false;
             AjustarDGV();
-            
+            CB_Filtro.Items.Add("Sin Filtro");
+            CB_Filtro.Items.Add("Nombre");
+            CB_Filtro.Items.Add("Precio");
+            CB_Filtro.SelectedIndex = 0; // Selecciona la opción neutral por defecto
+
+
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -177,5 +182,43 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 }
             }
         }
+
+        private void CB_Filtro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (CB_Filtro.SelectedItem == null) return;
+
+            string seleccion = CB_Filtro.SelectedItem.ToString();
+
+            if (seleccion == "Sin Filtro")
+            {
+                DGV.DataSource = null;
+                DGV.DataSource = productos; // ← Mostrar la lista original
+                DGV.Columns["CantidadEnCarrito"].Visible = false;
+                ColumnasDGV();
+                DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
+                return;
+            }
+
+            ArbolABB arbol;
+
+            if (seleccion == "Nombre")
+                arbol = new ArbolABB(p => p.Nombre);
+            else if (seleccion == "Precio")
+                arbol = new ArbolABB(p => p.Precio);
+            else
+                return;
+
+            foreach (var producto in productos)
+                arbol.Insertar(producto);
+
+            var listaOrdenada = arbol.ObtenerProductosOrdenados();
+
+            DGV.DataSource = null;
+            DGV.DataSource = listaOrdenada;
+            DGV.Columns["CantidadEnCarrito"].Visible = false;
+            ColumnasDGV();
+            DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
+        }
+
     }
 }
