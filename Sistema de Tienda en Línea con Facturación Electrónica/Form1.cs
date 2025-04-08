@@ -142,7 +142,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)
         {
-            FormAgregarProductos formAgregar = new FormAgregarProductos();
+            FormAgregarProductos formAgregar = new FormAgregarProductos(productos);
             formAgregar.Show();
             
         }

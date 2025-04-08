@@ -19,7 +19,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         }
         public int CantidadEnCarrito { get; set; } = 1;
 
-        public ClaseProducto(string NuevoNombre, int NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria) 
+        public ClaseProducto(string NuevoNombre, double NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria) 
         {
             Codigo = NuevoCodigo;
             Nombre = NuevoNombre;
