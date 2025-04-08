@@ -65,6 +65,12 @@
     <Compile Include="FormAgregarProductos.Designer.cs">
       <DependentUpon>FormAgregarProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOfertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOfertas.Designer.cs">
+      <DependentUpon>FormOfertas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lista_Carrito.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
