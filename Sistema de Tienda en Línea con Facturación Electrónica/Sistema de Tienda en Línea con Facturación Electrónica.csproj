@@ -79,6 +79,7 @@
     <Compile Include="FormStockCritico.Designer.cs">
       <DependentUpon>FormStockCritico.cs</DependentUpon>
     </Compile>
+    <Compile Include="Heap.cs" />
     <Compile Include="Lista_Carrito.cs" />
     <Compile Include="NodoArbol.cs" />
     <Compile Include="Program.cs" />

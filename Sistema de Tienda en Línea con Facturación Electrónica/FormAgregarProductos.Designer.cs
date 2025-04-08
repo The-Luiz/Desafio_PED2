@@ -41,6 +41,8 @@
             this.btnVolver = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -132,7 +134,7 @@
             // btnAgregar2
             // 
             this.btnAgregar2.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar2.Location = new System.Drawing.Point(168, 525);
+            this.btnAgregar2.Location = new System.Drawing.Point(108, 595);
             this.btnAgregar2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAgregar2.Name = "btnAgregar2";
             this.btnAgregar2.Size = new System.Drawing.Size(132, 55);
@@ -144,7 +146,7 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(487, 525);
+            this.btnVolver.Location = new System.Drawing.Point(446, 586);
             this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(132, 55);
@@ -172,12 +174,33 @@
             this.txtPrecio.Size = new System.Drawing.Size(318, 46);
             this.txtPrecio.TabIndex = 12;
             // 
+            // txtDescuento
+            // 
+            this.txtDescuento.Location = new System.Drawing.Point(271, 514);
+            this.txtDescuento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDescuento.Multiline = true;
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(318, 46);
+            this.txtDescuento.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(84, 534);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(98, 26);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Descuento";
+            // 
             // FormAgregarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(822, 595);
+            this.ClientSize = new System.Drawing.Size(909, 702);
+            this.Controls.Add(this.txtDescuento);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPrecio);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVolver);
@@ -215,5 +238,7 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtPrecio;
+        private System.Windows.Forms.TextBox txtDescuento;
+        private System.Windows.Forms.Label label7;
     }
 }

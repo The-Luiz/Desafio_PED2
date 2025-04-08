@@ -18,14 +18,17 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             return $"{Codigo}: {Nombre} (${Precio}) - Stock: {Stock} - Cat: {Categoria}";
         }
         public int CantidadEnCarrito { get; set; } = 1;
+        public double Descuento { get; set; }
 
-        public ClaseProducto(string NuevoNombre, double NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria) 
+        public ClaseProducto(string NuevoNombre, double NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria, double descuento =0) 
         {
             Codigo = NuevoCodigo;
             Nombre = NuevoNombre;
            Precio = NuevoPrecio;
            Stock = NuevoStock;
            Categoria = NuevaCategoria;
+            Descuento = descuento;
+            
         }
     }
 }

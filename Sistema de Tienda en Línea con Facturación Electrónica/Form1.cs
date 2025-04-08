@@ -32,6 +32,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DGV.MultiSelect = false;
+            
             AjustarDGV();
             CB_Filtro.Items.Add("Sin Filtro");
             CB_Filtro.Items.Add("Nombre");
@@ -96,14 +97,15 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         public void Pruebas()
         {
             
-            productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico"));
-            productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble"));
-            productos.Add(new ClaseProducto("Cepillos", 3, 0, 3, "Cosas"));
-            productos.Add(new ClaseProducto("Libros", 5, 7, 4, "Cosas"));
+            productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico",0));
+            productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble",1));
+            productos.Add(new ClaseProducto("Cepillos", 3, 0, 3, "Cosas",0));
+            productos.Add(new ClaseProducto("Libros", 5, 7, 4, "Cosas",0));
 
             //DGV.AutoGenerateColumns = true;
             DGV.DataSource = productos;
             DGV.Columns["CantidadEnCarrito"].Visible = false;
+            DGV.Columns["Descuento"].Visible = false;
             ColumnasDGV();
             DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
 
@@ -143,8 +145,6 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 carrito.AgregarProducto(ProductoSeleccionado);
                 MessageBox.Show("Producto agregado al carrito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
-            
         }
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)
@@ -176,6 +176,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 DGV.DataSource = null;
                 DGV.DataSource = productos;
                 DGV.Columns["CantidadEnCarrito"].Visible = false;
+                DGV.Columns["Descuento"].Visible = false;
                 ColumnasDGV();
                 DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
                 return;
@@ -193,11 +194,20 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                     }
                 }
             }
-             if (RD_Nombre.Checked )
+            if (RD_Nombre.Checked )
             {
                 // Buscar por nombre
                 resultados = productos.Where(p => p.Nombre.ToLower().Contains(texto));
                 DGV.Columns["CantidadEnCarrito"].Visible = false;
+                DGV.Columns["Descuento"].Visible = false;
+                ColumnasDGV();
+                DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
+            }
+            if (RD_Categoria.Checked)
+            {
+                resultados = productos.Where(p=> p.Categoria.ToLower().Contains(texto));
+                DGV.Columns["CantidadEnCarrito"].Visible = false;
+                DGV.Columns["Descuento"].Visible = false;
                 ColumnasDGV();
                 DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
             }
@@ -206,6 +216,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 DGV.DataSource = null;
                 DGV.DataSource = resultados.ToList();
                 DGV.Columns["CantidadEnCarrito"].Visible = false;
+                DGV.Columns["Descuento"].Visible = false;
                 ColumnasDGV();
                 DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
             }
@@ -222,6 +233,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 DGV.DataSource = null;
                 DGV.DataSource = productos; // ← Mostrar la lista original
                 DGV.Columns["CantidadEnCarrito"].Visible = false;
+                DGV.Columns["Descuento"].Visible = false;
                 ColumnasDGV();
                 DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
                 return;
@@ -244,14 +256,16 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             DGV.DataSource = null;
             DGV.DataSource = listaOrdenada;
             DGV.Columns["CantidadEnCarrito"].Visible = false;
+            DGV.Columns["Descuento"].Visible = false;
             ColumnasDGV();
             DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-            FormOfertas Oferta = new FormOfertas();
-            Oferta.ShowDialog();
+            FormOfertas formOfertas = new FormOfertas(productos); // importante: esta misma instancia
+            formOfertas.Show();
+
 
         }
     }
