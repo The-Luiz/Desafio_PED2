@@ -145,5 +145,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             formAgregar.Show();
             
         }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -205,6 +205,7 @@
             this.btnStock.TabIndex = 6;
             this.btnStock.Text = "Stock Critico";
             this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // Form1
             // 
