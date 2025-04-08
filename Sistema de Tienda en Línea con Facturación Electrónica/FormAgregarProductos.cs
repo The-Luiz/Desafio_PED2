@@ -27,5 +27,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         {
 
         }
+
+        private void btnAgregar2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

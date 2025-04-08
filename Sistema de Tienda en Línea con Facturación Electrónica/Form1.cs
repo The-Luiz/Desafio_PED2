@@ -149,7 +149,13 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void btnStock_Click(object sender, EventArgs e)
         {
+            var productosCriticos = productos.Where(p => p.Stock < 5).ToList();
 
+            // Crear una nueva instancia del formulario
+            FormStockCritico formStockCritico = new FormStockCritico(productosCriticos);
+
+            // Mostrar el formulario con los productos críticos
+            formStockCritico.Show();
 
         }
     }

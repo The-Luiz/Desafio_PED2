@@ -22,3 +22,17 @@ C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sis
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.pdb
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormOfertas.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe.config
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Sistema de Tienda en Línea con Facturación Electrónica.pdb
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.csproj.AssemblyReference.cache
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.Carrito.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.Form1.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormAgregarProductos.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormOfertas.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.Properties.Resources.resources
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.csproj.GenerateResource.cache
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.csproj.CoreCompileInputs.cache
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.pdb
+C:\Mesa\Ped\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormStockCritico.resources
