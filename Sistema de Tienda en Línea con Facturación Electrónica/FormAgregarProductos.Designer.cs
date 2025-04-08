@@ -39,6 +39,8 @@
             this.txtStock = new System.Windows.Forms.TextBox();
             this.btnAgregar2 = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -75,7 +77,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(71, 244);
+            this.label4.Location = new System.Drawing.Point(71, 309);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 3;
@@ -85,7 +87,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(71, 306);
+            this.label5.Location = new System.Drawing.Point(71, 369);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 22);
             this.label5.TabIndex = 4;
@@ -109,7 +111,7 @@
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(241, 228);
+            this.txtCategoria.Location = new System.Drawing.Point(241, 293);
             this.txtCategoria.Multiline = true;
             this.txtCategoria.Name = "txtCategoria";
             this.txtCategoria.Size = new System.Drawing.Size(283, 38);
@@ -117,7 +119,7 @@
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(241, 290);
+            this.txtStock.Location = new System.Drawing.Point(241, 353);
             this.txtStock.Multiline = true;
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(283, 38);
@@ -126,7 +128,7 @@
             // btnAgregar2
             // 
             this.btnAgregar2.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar2.Location = new System.Drawing.Point(161, 374);
+            this.btnAgregar2.Location = new System.Drawing.Point(149, 420);
             this.btnAgregar2.Name = "btnAgregar2";
             this.btnAgregar2.Size = new System.Drawing.Size(117, 44);
             this.btnAgregar2.TabIndex = 9;
@@ -136,7 +138,7 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(436, 374);
+            this.btnVolver.Location = new System.Drawing.Point(433, 420);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(117, 44);
             this.btnVolver.TabIndex = 10;
@@ -144,12 +146,32 @@
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(71, 243);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(53, 22);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Precio";
+            // 
+            // txtPrecio
+            // 
+            this.txtPrecio.Location = new System.Drawing.Point(241, 227);
+            this.txtPrecio.Multiline = true;
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(283, 38);
+            this.txtPrecio.TabIndex = 12;
+            // 
             // FormAgregarProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(731, 476);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.btnAgregar2);
             this.Controls.Add(this.txtStock);
@@ -164,6 +186,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormAgregarProductos";
             this.Text = "FormAgregarProductos";
+            this.Load += new System.EventHandler(this.FormAgregarProductos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +205,7 @@
         private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Button btnAgregar2;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtPrecio;
     }
 }
