@@ -98,6 +98,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             DGV.DataSource = productos;
             DGV.Columns["CantidadEnCarrito"].Visible = false;
             ColumnasDGV();
+            DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
 
         }
 
