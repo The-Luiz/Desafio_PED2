@@ -17,6 +17,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
     {
         BindingList<ClaseProducto> productos = new BindingList<ClaseProducto>();
         private Lista_Carrito carrito = new Lista_Carrito();
+        private ArbolAVL arbolCodigos = new ArbolAVL();
+
 
         public Form1()
         {
@@ -142,7 +144,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void btnAgregarProductos_Click(object sender, EventArgs e)
         {
-            FormAgregarProductos formAgregar = new FormAgregarProductos(productos);
+            FormAgregarProductos formAgregar = new FormAgregarProductos(productos, arbolCodigos);
             formAgregar.Show();
             
         }

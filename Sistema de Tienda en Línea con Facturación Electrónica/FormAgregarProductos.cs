@@ -13,11 +13,13 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
     public partial class FormAgregarProductos : Form
     {
         private BindingList<ClaseProducto> productos;
+        private ArbolAVL arbolCodigos;
 
-        public FormAgregarProductos(BindingList<ClaseProducto> productos)
+        public FormAgregarProductos(BindingList<ClaseProducto> productos, ArbolAVL arbolCodigos)
         {
             InitializeComponent();
             this.productos = productos;
+            this.arbolCodigos = arbolCodigos;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -33,11 +35,19 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void btnAgregar2_Click(object sender, EventArgs e)
         {
+            int codigo = int.Parse(txtID.Text);
+
+            // Validar con el árbol AVL
+            if (!arbolCodigos.Insertar(codigo))
+            {
+                MessageBox.Show("Ya existe un producto con ese código.", "Código duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             // Convertir y validar campos si es necesario
             string nombre = txtNombre.Text;
             double precio = double.Parse(txtPrecio.Text);
             int stock = int.Parse(txtStock.Text);
-            int codigo = int.Parse(txtID.Text);
+            //int codigo = int.Parse(txtID.Text);
             string categoria = txtCategoria.Text;
 
             // Crear el producto y agregarlo a la lista
