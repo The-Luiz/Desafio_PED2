@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArbolABB.cs" />
+    <Compile Include="ArbolAVL.cs" />
     <Compile Include="Carrito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,7 +73,9 @@
     <Compile Include="FormOfertas.Designer.cs">
       <DependentUpon>FormOfertas.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestorProductos.cs" />
     <Compile Include="Lista_Carrito.cs" />
+    <Compile Include="NodoArbol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Carrito.resx">

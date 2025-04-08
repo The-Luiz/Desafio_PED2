@@ -13,7 +13,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         public int Stock { get; set; }
         public int Codigo { get; set; }
         public string Categoria { get; set; }
-
+        public override string ToString()
+        {
+            return $"{Codigo}: {Nombre} (${Precio}) - Stock: {Stock} - Cat: {Categoria}";
+        }
         public int CantidadEnCarrito { get; set; } = 1;
 
         public ClaseProducto(string NuevoNombre, int NuevoPrecio, int NuevoStock, int NuevoCodigo, string NuevaCategoria) 
