@@ -62,10 +62,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         private void textBox1_Enter(object sender, EventArgs e)
         {
             //Esto es para que se esconda las palabras del textbox
-            if (textBox1.Text == "Busca productos ;)")
+            if (txtBusqueda.Text == "Busca productos ;)")
             {
-                textBox1.Text = "";
-                textBox1.ForeColor = Color.Black;
+                txtBusqueda.Text = "";
+                txtBusqueda.ForeColor = Color.Black;
             }
         }
         private void AjustarDGV()
@@ -159,6 +159,23 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             // Mostrar el formulario con los productos críticos
             formStockCritico.Show();
 
+        }
+
+        private void txtBusqueda_TextChanged(object sender, EventArgs e)
+        {
+            if (RD_ID.Checked && int.TryParse(txtBusqueda.Text, out int codigo))
+            {
+                foreach (DataGridViewRow row in DGV.Rows)
+                {
+                    row.Selected = false;
+                    if ((int)row.Cells["Codigo"].Value == codigo)
+                    {
+                        row.Selected = true;
+                        DGV.FirstDisplayedScrollingRowIndex = row.Index;
+                        break;
+                    }
+                }
+            }
         }
     }
 }
