@@ -59,5 +59,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             MessageBox.Show("Producto agregado.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); // Cerrar el formulario luego de agregar
         }
+
+        private void txtDescuento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

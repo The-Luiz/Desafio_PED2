@@ -57,3 +57,4 @@ C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\New
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Newtonsoft.Json.xml
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormStockCritico.resources
 C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema .A449E236.Up2Date
+C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormEditar.resources

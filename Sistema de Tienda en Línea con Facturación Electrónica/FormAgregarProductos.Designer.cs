@@ -49,9 +49,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 16F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(55, 40);
+            this.label1.Location = new System.Drawing.Point(49, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(415, 35);
+            this.label1.Size = new System.Drawing.Size(347, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Agregue productos facilmente";
             // 
@@ -59,9 +59,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(80, 138);
+            this.label2.Location = new System.Drawing.Point(71, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 26);
+            this.label2.Size = new System.Drawing.Size(123, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "ID de Producto";
             // 
@@ -69,9 +69,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(80, 220);
+            this.label3.Location = new System.Drawing.Point(71, 176);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 26);
+            this.label3.Size = new System.Drawing.Size(164, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre del producto";
             // 
@@ -79,9 +79,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(80, 386);
+            this.label4.Location = new System.Drawing.Point(71, 309);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 26);
+            this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Categoría";
             // 
@@ -89,55 +89,50 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(80, 461);
+            this.label5.Location = new System.Drawing.Point(71, 369);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 26);
+            this.label5.Size = new System.Drawing.Size(51, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Stock";
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(271, 138);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtID.Location = new System.Drawing.Point(241, 110);
             this.txtID.Multiline = true;
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(318, 46);
+            this.txtID.Size = new System.Drawing.Size(283, 38);
             this.txtID.TabIndex = 5;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(271, 219);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNombre.Location = new System.Drawing.Point(241, 175);
             this.txtNombre.Multiline = true;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(318, 46);
+            this.txtNombre.Size = new System.Drawing.Size(283, 38);
             this.txtNombre.TabIndex = 6;
             // 
             // txtCategoria
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(271, 366);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCategoria.Location = new System.Drawing.Point(241, 293);
             this.txtCategoria.Multiline = true;
             this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(318, 46);
+            this.txtCategoria.Size = new System.Drawing.Size(283, 38);
             this.txtCategoria.TabIndex = 7;
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(271, 441);
-            this.txtStock.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtStock.Location = new System.Drawing.Point(241, 353);
             this.txtStock.Multiline = true;
             this.txtStock.Name = "txtStock";
-            this.txtStock.Size = new System.Drawing.Size(318, 46);
+            this.txtStock.Size = new System.Drawing.Size(283, 38);
             this.txtStock.TabIndex = 8;
             // 
             // btnAgregar2
             // 
             this.btnAgregar2.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar2.Location = new System.Drawing.Point(108, 595);
-            this.btnAgregar2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnAgregar2.Location = new System.Drawing.Point(96, 476);
             this.btnAgregar2.Name = "btnAgregar2";
-            this.btnAgregar2.Size = new System.Drawing.Size(132, 55);
+            this.btnAgregar2.Size = new System.Drawing.Size(117, 44);
             this.btnAgregar2.TabIndex = 9;
             this.btnAgregar2.Text = "Agregar";
             this.btnAgregar2.UseVisualStyleBackColor = true;
@@ -146,10 +141,9 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(446, 586);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnVolver.Location = new System.Drawing.Point(396, 469);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(132, 55);
+            this.btnVolver.Size = new System.Drawing.Size(117, 44);
             this.btnVolver.TabIndex = 10;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
@@ -159,46 +153,45 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(80, 304);
+            this.label6.Location = new System.Drawing.Point(71, 243);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 26);
+            this.label6.Size = new System.Drawing.Size(53, 22);
             this.label6.TabIndex = 11;
             this.label6.Text = "Precio";
             // 
             // txtPrecio
             // 
-            this.txtPrecio.Location = new System.Drawing.Point(271, 284);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrecio.Location = new System.Drawing.Point(241, 227);
             this.txtPrecio.Multiline = true;
             this.txtPrecio.Name = "txtPrecio";
-            this.txtPrecio.Size = new System.Drawing.Size(318, 46);
+            this.txtPrecio.Size = new System.Drawing.Size(283, 38);
             this.txtPrecio.TabIndex = 12;
             // 
             // txtDescuento
             // 
-            this.txtDescuento.Location = new System.Drawing.Point(271, 514);
-            this.txtDescuento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtDescuento.Location = new System.Drawing.Point(241, 411);
             this.txtDescuento.Multiline = true;
             this.txtDescuento.Name = "txtDescuento";
-            this.txtDescuento.Size = new System.Drawing.Size(318, 46);
+            this.txtDescuento.Size = new System.Drawing.Size(283, 38);
             this.txtDescuento.TabIndex = 14;
+            this.txtDescuento.TextChanged += new System.EventHandler(this.txtDescuento_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(84, 534);
+            this.label7.Location = new System.Drawing.Point(75, 427);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 26);
+            this.label7.Size = new System.Drawing.Size(83, 22);
             this.label7.TabIndex = 13;
             this.label7.Text = "Descuento";
             // 
             // FormAgregarProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(909, 702);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(808, 562);
             this.Controls.Add(this.txtDescuento);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtPrecio);

@@ -108,6 +108,23 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             DGV.Columns["Precio"].DefaultCellStyle.Format = "C";
 
         }
+        private void EditarProducto(object sender, EventArgs e)
+        {
+            if (DGV.CurrentRow != null)
+            {
+                FormEditar editarForm = new FormEditar();
+
+                editarForm.CodigoE = DGV.CurrentRow.Cells["Codigo"].Value.ToString();
+                editarForm.NombreE = DGV.CurrentRow.Cells["Nombre"].Value.ToString();
+                editarForm.PrecioE = DGV.CurrentRow.Cells["Precio"].Value.ToString();
+                editarForm.CategoriaE = DGV.CurrentRow.Cells["Categoria"].Value.ToString();
+                editarForm.StockE = DGV.CurrentRow.Cells["Stock"].Value.ToString();
+                
+
+                editarForm.Fila = DGV.CurrentRow; // La fila seleccionada
+                editarForm.ShowDialog();
+            }
+        }
 
         private void DGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -121,9 +138,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
                 MenuItem borrarItem = new MenuItem("Borrar",BorrarFila);
                 MenuItem agregarcarrito = new MenuItem("Agregar al Carrito",AgregarCarrito);
-
+                MenuItem editarItem = new MenuItem("Editar", (s, ev) => EditarProducto(s, ev));
                 m.MenuItems.Add(borrarItem);
                 m.MenuItems.Add(agregarcarrito);
+                m.MenuItems.Add(editarItem);
 
                 m.Show(DGV, new Point(e.X, e.Y));
             }
@@ -142,6 +160,13 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             {
                 carrito.AgregarProducto(ProductoSeleccionado);
                 MessageBox.Show("Producto agregado al carrito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        private void EditarF(object sender, EventArgs e)
+        {
+            if (DGV.CurrentRow?.DataBoundItem is ClaseProducto ProductoSeleccionado)
+            {
+               
             }
         }
 
@@ -281,5 +306,6 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         {
 
         }
+
     }
 }
