@@ -40,7 +40,8 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 Fila.Cells["Precio"].Value = txtPrecioE.Text;
                 Fila.Cells["Categoria"].Value = txtCategoriaE.Text;
                 Fila.Cells["Stock"].Value = txtStockE.Text;
-
+                Fila.Cells["Descuento"].Value = txtDescuentoE.Text; // Esto se te olvido
+                MessageBox.Show("Producto Editado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); // Cierra la ventana de edición
             }
            
@@ -81,9 +82,10 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             get { return txtDescuentoE.Text; }
             set { txtDescuentoE.Text = value; }
         }
-       
 
+        private void FormEditar_Load(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }
