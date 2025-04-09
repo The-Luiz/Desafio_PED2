@@ -33,6 +33,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             listView1.Columns.Add("Precio", 70);
             listView1.Columns.Add("Descuento", 70);
             listView1.Columns.Add("Categoría", 120);
+            this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
             heapOfertas = new Heap();
 
             foreach (var producto in productos)

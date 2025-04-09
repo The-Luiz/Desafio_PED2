@@ -23,14 +23,16 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         public Form1()
         {
             InitializeComponent();
-            
+            panel1.Paint += Panel1_Paint;
+            panel1.Resize += (s, e) => panel1.Invalidate();
+            panel2.BackColor = ColorTranslator.FromHtml("#5047c3");
             Pruebas();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             this.DGV.MultiSelect = false;
-            
+            this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
             AjustarDGV();
             CB_Filtro.Items.Add("Sin Filtro");
             CB_Filtro.Items.Add("Nombre");

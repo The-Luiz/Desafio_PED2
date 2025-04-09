@@ -30,7 +30,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void FormAgregarProductos_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
         }
 
         private void btnAgregar2_Click(object sender, EventArgs e)

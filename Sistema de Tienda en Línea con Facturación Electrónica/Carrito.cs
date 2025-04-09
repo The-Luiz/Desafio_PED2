@@ -30,6 +30,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void Carrito_Load(object sender, EventArgs e)
         {
+            this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
             MostrarProductosEnListView();
             RefrescarListView();
             listView1.Columns.Add("Producto", 120);
