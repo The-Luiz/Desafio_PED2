@@ -43,6 +43,7 @@
             this.SubTotalPrecio = new System.Windows.Forms.Label();
             this.Impuestos = new System.Windows.Forms.Label();
             this.Total = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // listView1
@@ -80,6 +81,7 @@
             this.btnGenerar.TabIndex = 2;
             this.btnGenerar.Text = "Generar Factura";
             this.btnGenerar.UseVisualStyleBackColor = true;
+            this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);
             // 
             // label1
             // 
@@ -192,5 +194,6 @@
         private System.Windows.Forms.Label SubTotalPrecio;
         private System.Windows.Forms.Label Impuestos;
         private System.Windows.Forms.Label Total;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
