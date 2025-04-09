@@ -12,9 +12,13 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 {
     public partial class FormEditar : Form
     {
+       
         public FormEditar()
         {
             InitializeComponent();
+           
+
+       
         }
         public DataGridViewRow Fila { get; set; }
         private void label2_Click(object sender, EventArgs e)
@@ -39,7 +43,9 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
                 this.Close(); // Cierra la ventana de edición
             }
+           
         }
+        
         public string CodigoE
         {
             get { return txtCodigoE.Text; }
@@ -75,6 +81,9 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             get { return txtDescuentoE.Text; }
             set { txtDescuentoE.Text = value; }
         }
+       
+
+
 
     }
 }

@@ -119,7 +119,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 editarForm.PrecioE = DGV.CurrentRow.Cells["Precio"].Value.ToString();
                 editarForm.CategoriaE = DGV.CurrentRow.Cells["Categoria"].Value.ToString();
                 editarForm.StockE = DGV.CurrentRow.Cells["Stock"].Value.ToString();
-                
+
 
                 editarForm.Fila = DGV.CurrentRow; // La fila seleccionada
                 editarForm.ShowDialog();
