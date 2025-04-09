@@ -58,5 +58,15 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 listView1.Items.Add(item);
             }
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

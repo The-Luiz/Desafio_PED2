@@ -23,9 +23,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         public Form1()
         {
             InitializeComponent();
-            panel1.Paint += Panel1_Paint;
-            panel1.Resize += (s, e) => panel1.Invalidate();
-            panel2.BackColor = ColorTranslator.FromHtml("#5047c3");
+            
             Pruebas();
         }
 
@@ -98,7 +96,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         {
             
             productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico",0));
-            productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble",1));
+            productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble",20));
             productos.Add(new ClaseProducto("Cepillos", 3, 2, 3, "Cosas",0));
             productos.Add(new ClaseProducto("Libros", 5, 7, 4, "Cosas",0));
 
@@ -266,6 +264,21 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             FormOfertas formOfertas = new FormOfertas(productos); // importante: esta misma instancia
             formOfertas.Show();
 
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }
