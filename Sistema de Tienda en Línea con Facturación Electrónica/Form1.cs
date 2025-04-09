@@ -99,7 +99,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
             
             productos.Add(new ClaseProducto("Teclado", 50, 2, 1, "Electrodoméstico",0));
             productos.Add(new ClaseProducto("Silla", 100, 10, 2, "Mueble",1));
-            productos.Add(new ClaseProducto("Cepillos", 3, 0, 3, "Cosas",0));
+            productos.Add(new ClaseProducto("Cepillos", 3, 2, 3, "Cosas",0));
             productos.Add(new ClaseProducto("Libros", 5, 7, 4, "Cosas",0));
 
             //DGV.AutoGenerateColumns = true;

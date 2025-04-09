@@ -53,3 +53,7 @@ C:\Mesa\PED Trabajo\Sistema de Tienda en Línea con Facturación Electrónica\ob
 C:\Mesa\PED Trabajo\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema .A449E236.Up2Date
 C:\Mesa\PED Trabajo\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.exe
 C:\Mesa\PED Trabajo\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema de Tienda en Línea con Facturación Electrónica.pdb
+C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Newtonsoft.Json.dll
+C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\bin\Debug\Newtonsoft.Json.xml
+C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica.FormStockCritico.resources
+C:\Repos\Sistema de Tienda en Línea con Facturación Electrónica\obj\Debug\Sistema .A449E236.Up2Date
