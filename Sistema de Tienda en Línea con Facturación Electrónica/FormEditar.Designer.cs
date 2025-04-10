@@ -51,6 +51,7 @@
             this.txtCodigoE.Name = "txtCodigoE";
             this.txtCodigoE.Size = new System.Drawing.Size(318, 46);
             this.txtCodigoE.TabIndex = 6;
+            this.txtCodigoE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoE_KeyPress);
             // 
             // txtPrecioE
             // 
@@ -60,6 +61,7 @@
             this.txtPrecioE.Name = "txtPrecioE";
             this.txtPrecioE.Size = new System.Drawing.Size(318, 46);
             this.txtPrecioE.TabIndex = 7;
+            this.txtPrecioE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioE_KeyPress_1);
             // 
             // txtCategoriaE
             // 
@@ -69,6 +71,7 @@
             this.txtCategoriaE.Name = "txtCategoriaE";
             this.txtCategoriaE.Size = new System.Drawing.Size(318, 46);
             this.txtCategoriaE.TabIndex = 8;
+            this.txtCategoriaE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCategoriaE_KeyPress);
             // 
             // txtNombreE
             // 
@@ -78,15 +81,17 @@
             this.txtNombreE.Name = "txtNombreE";
             this.txtNombreE.Size = new System.Drawing.Size(318, 46);
             this.txtNombreE.TabIndex = 9;
+            this.txtNombreE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreE_KeyPress);
             // 
             // txtStockE
             // 
-            this.txtStockE.Location = new System.Drawing.Point(288, 434);
+            this.txtStockE.Location = new System.Drawing.Point(288, 435);
             this.txtStockE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStockE.Multiline = true;
             this.txtStockE.Name = "txtStockE";
             this.txtStockE.Size = new System.Drawing.Size(318, 46);
             this.txtStockE.TabIndex = 10;
+            this.txtStockE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockE_KeyPress);
             // 
             // label1
             // 
@@ -143,6 +148,8 @@
             this.txtDescuentoE.Name = "txtDescuentoE";
             this.txtDescuentoE.Size = new System.Drawing.Size(318, 46);
             this.txtDescuentoE.TabIndex = 16;
+            this.txtDescuentoE.TextChanged += new System.EventHandler(this.txtDescuentoE_TextChanged);
+            this.txtDescuentoE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescuentoE_KeyPress);
             // 
             // label6
             // 

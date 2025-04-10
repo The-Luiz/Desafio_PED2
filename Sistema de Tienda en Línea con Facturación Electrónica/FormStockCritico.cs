@@ -20,7 +20,7 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void FormStockCritico_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
         }
 
         public FormStockCritico(List<ClaseProducto> productos)

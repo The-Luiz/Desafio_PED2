@@ -33,6 +33,11 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (txtDescuentoE.Text  =="")
+            {
+                MessageBox.Show("El descuento no puede estar en blanco:\n", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
             if (Fila != null)
             {
                 Fila.Cells["Codigo"].Value = txtCodigoE.Text;
@@ -44,7 +49,6 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
                 MessageBox.Show("Producto Editado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close(); // Cierra la ventana de edición
             }
-           
         }
         
         public string CodigoE
@@ -86,6 +90,60 @@ namespace Sistema_de_Tienda_en_Línea_con_Facturación_Electrónica
         private void FormEditar_Load(object sender, EventArgs e)
         {
             this.BackColor = ColorTranslator.FromHtml("#d7e1fd");
+        }
+
+
+        private void txtPrecioE_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCodigoE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNombreE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCategoriaE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtStockE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDescuentoE_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtDescuentoE_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
